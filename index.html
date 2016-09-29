@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+    <meta name="robots" content="index,follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>The Evergreen Farm - Lebanon, NJ</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="The Evergreen Farm is a Christmas tree farm located in Lebanon, New Jersey. Stop by this holiday season and view our gorgeous selection of trees!">
+
+	<meta name="keywords" content="The Evergreen Farm, Christmas, Tree, Farm, Lebanon, New Jersey" />
+
+    <meta property="fb:app_id" content="542572515952044" />
+    <meta property="og:title" content="The Evergreen Farm" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://www.theevergreenfarm.com/" />
+	<meta property="og:description" content="The Evergreen Farm is a Christmas tree farm located in Lebanon, New Jersey. Stop by this holiday season and view our gorgeous selection of trees!" />
+    <meta property="og:image" content="http://theevergreenfarm.com/images/meta_photo.jpg" />
+    <meta name="thumbnail" content="http://theevergreenfarm.com/images/meta_photo.jpg" />
+    <meta name="Author" content="The Evergreen Farm">
+	<meta name="copyright" content="&copy; 2016 The Evergreen Farm. All Rights Reserved.">
+    <link rel="canonical" href="http://www.theevergreenfarm.com/" />
+
+	<link rel="icon" href="images/favicon.png" />
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+	<script src="js/index.js"></script>
+	<script src="js/jquery.cycle2.js"></script>
+	<script src="js/cycle.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/wow.js"></script>
+
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map');
+       	var evergreen = {lat: 40.599919, lng: -74.84753699999999};
+       	
+        var mapOptions = {
+          center: new google.maps.LatLng(evergreen),
+          zoom: 16,
+          streetViewControl: false,
+          draggable: false,
+          zoomControl: false,
+          scrollwheel: false,
+
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+     
+        var marker = new google.maps.Marker({
+        	position: evergreen,
+        	map: map,
+        	animation: google.maps.Animation.DROP,
+    		title: 'The Evergreen Farm'
+  		});
+
+  		google.maps.event.addListener(marker, 'click', function() {
+    		var url = 'http://www.google.com/maps/dir//The+Evergreen+Farm+4+Bass+Ln,+Lebanon,+NJ+08833,+United+States/@40.5998978,-74.9175769,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x89c38ccbad651471:0x6b2d4290f4e459a2!2m2!1d-74.847537!2d40.599919';
+    		window.location.href = url;
+		});	
+
+		var center;
+			function calculateCenter() {
+  			center = map.getCenter();
+		}
+		google.maps.event.addDomListener(map, 'idle', function() {
+  			calculateCenter();
+		});
+		google.maps.event.addDomListener(window, 'resize', function() {
+  		map.setCenter(center);
+		});
+
+
+      }
+      
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+</head>
+
+<body class="wow fadeIn">
+
+
+	
+	<div id="header">
+		
+				<div id="courtesy">
+					<div class="navwrapper">
+						<a href="tel:9082369550" target="_blank" class="number"><span class="icon-phone"></span> (908) 236-9550</a>
+						<a href="http://www.google.com/maps/dir//The+Evergreen+Farm+4+Bass+Ln,+Lebanon,+NJ+08833,+United+States/@40.5998978,-74.9175769,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x89c38ccbad651471:0x6b2d4290f4e459a2!2m2!1d-74.847537!2d40.599919" class="address"><span class="icon-marker"></span> 4 Bass Lane, Lebanon, NJ 08833</a>
+					</div>
+					<div class="clear"></div>
+				</div>
+
+				<div id="navbar">
+					<div class="navwrapper">
+						<h1><a href="#bannerwrapper"><div id="logo" title="The Evergreen Farm"></div></h1></a>
+
+						<ul id="main_nav">
+							<a href="#about"><li>about</li></a>
+							<a href="#trees" class="space"><li>our trees</li></a>
+							<a href="#care"><li>care tips</li></a>
+							<a href="#contact"><li>contact</li></a>
+						</ul>
+
+						
+
+					</div>
+
+					
+				
+				</div>
+
+		
+	</div>	
+					<div id="burgericon">
+		  				<span></span>
+		  				<span></span>
+		  				<span></span>
+		  				<span></span>
+					</div>
+
+	<div id="overlay">
+		<ul id="overlaynavigation">
+			<li><a href="#about">about</a></li>
+			<li><a href="#trees">our trees</a></li>
+			<li><a href="#care">care tips</a></li>
+			<li><a href="#contact">contact</a></li>
+			<li><a href="tel:9082369550" class="numberoverlay"><span class="icon-phone"></span> (908) 236-9550</a></li>
+			<li><a href="http://www.google.com/maps/dir//The+Evergreen+Farm+4+Bass+Ln,+Lebanon,+NJ+08833,+United+States/@40.5998978,-74.9175769,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x89c38ccbad651471:0x6b2d4290f4e459a2!2m2!1d-74.847537!2d40.599919" class="numberoverlay"><span class="icon-marker"></span> 4 Bass Lane, Lebanon, NJ 08833</a></li>
+		</ul>
+	</div>
+
+	
+	<div id="bannerwrapper">
+		<div id="banner" title="The Evergreen Farm">
+			<h2>Welcome</h2>
+			<h3>to our family farm</h3>
+			<p>"Where a wonderful holiday tree tradition begins!"</p>
+			<h4>Owned and Operated by The Thorne Family</h4>
+		</div>
+	</div>
+	
+	<div id="content">
+
+		<div id="about" class="section alt">
+			<div class="wrapper">
+				<h2>About The Evergreen Farm</h2>
+
+				<p>The Evergreen Farm has been owned and operated by Jeff and Bev Thorne for a dozen years, with help and support from our children: Brian, Betsy and Mike. Now that Brian is in medical school in Wisconsin, and Betsy works in Nashville following her graduation from Vanderbilt University, Mike continues to help in a big way! He is a student at nearby Lafayette College, so he leads the team of youth who help our customers choose their perfect Christmas tree. We're ready for you, looking forward to seeing your family this year.</p>
+
+				<p>Come tag your tree early! Tagging reserves your chosen tree. Return when you're ready to take the tree home. We'll help by cutting it, carrying it down the hill, trimming branches off as you like, baling it, drilling a hole in its base if you'd like, and even tying it onto your car! While we work, you can enjoy hot cider &mdash; made from our own apples &mdash; and freshly baked cookies right out of the oven while you stay warm by the fire.</p>
+				
+				<p>We've got lots more! We also offer pre-cut trees in addition to the choose &amp; cut trees. We carry wreaths, roping, tree stands, ornaments, lights, and live balled trees. We've got a small gift shop. We'll make custom wreaths for you, and grave blankets for your loved ones. Give us a call &mdash; we'll prepare just what you want!</p>
+
+			</div>
+			<div class="clear"></div>
+		</div>
+
+			<div id="about_tiles">
+				<div id="tileone" class="tile" title="Farm Helpers">></div>
+				<div id="tiletwo" class="tile" title="By the Fire"></div>
+				<div id="tilethree" class="tile" title="The Evergreen Farm Sign"></div>
+				<div id="tilefour" class="tile" title="The Evergreen Giftshop"></div>
+				<div id="tilefive" class="tile" title="Christmas Trees"></div>
+
+			</div>
+
+		<div id="trees" class="section">
+			<h2>Our Tree Selection</h2>
+						<a href='#' class="prev"><p><span class="icon-leftarrow"></span></p></a>
+						<a href='#' class="next"><p><span class="icon-rightarrow"></span></p></a>			
+					<div id="slides">
+						
+						
+						<div id="first_slide" class="slide_item">
+							<div class="slide_container">
+								<div class="circle" title="Canaan Fir"></div>
+								<div class="slide_text">	
+									<h4>Canaan Fir</h4>
+									<p>These trees are very popular, and we have a lot of them. They have relatively long needles and are much softer to the touch than Blue Spruce. These trees are often mistaken for Fraser Fir trees. They have a bottlebrush-like appearance. They often have a blue or silver tinge to them on the underside of the branches.</p>
+
+								</div>
+								<div class="clear"></div>
+							</div>
+						</div>
+                        <div id="second_slide" class="slide_item">
+							<div class="slide_container">
+								<div class="circle" title="Blue Spruce"></div>
+								<div class="slide_text">
+								<h4>Blue Spruce</h4>
+								<p>These trees are elegant and beautiful. Their branches are strong and sharp. They have a nice blue tinge to them and they are great for displaying ornaments because they are so strong. But, they are sharp to the touch and may not be appropriate for a house with young children.</p>
+								</div>
+								<div class="clear"></div>
+							</div>
+						</div>
+
+						<div id="third_slide" class="slide_item">
+							<div class="slide_container">
+								<div class="circle" title="Douglas Fir"></div>
+								<div class="slide_text">
+								<h4>Douglas Fir</h4>
+								<p>This is a full, chunky and very green Christmas tree and is favored by families with young children. These trees tend to have very robust bases and short, soft needles. Their branches are typically very full, and the needles are soft and easy to touch.</p>
+								</div>
+								<div class="clear"></div>
+							</div>
+						</div>
+
+						<div id="fourth_slide" class="slide_item">
+							<div class="slide_container">
+								<div class="circle" title="Concolor Fir"></div>
+								<div class="slide_text">
+								<h4>Concolor Fir</h4>
+								<p>These trees are classic and beautiful. They have a distinctive citrus aroma which makes them unique. They tend to be leaner than the Douglas Fir, with soft needles that are long. These branches have ample room between branches.</p>
+								</div>
+								<div class="clear"></div>
+							</div>
+						</div>
+
+						<div id="fifth_slide" class="slide_item">
+							<div class="slide_container">
+								<div class="circle"></div>
+								<div class="slide_text">
+								<h4>Fraser Fir</h4>
+								<p>These trees tend to be tall and elegant. They are deep green and have sturdy branches with short needles that are soft to the touch.</p>
+								</div>
+								<div class="clear"></div>
+							</div>
+						</div>
+                        
+					
+					</div><!-- slides -->
+					
+			<div class="clear"></div>
+
+			</div>
+
+
+		<div id="treeblurb" class="section alt">
+			<div class="wrapper">
+				<div class="innerwrapper">
+					<span class="icon-treeheight"></span>
+					<p>Most of our trees are 6-10 foot in height. They are priced by the foot, and the price is $10 per foot. The price includes all of the extras as well:  cutting the tree, baling it, drilling a hole in the bottom, and tying it on your car. We do also have a good number of taller trees. Please come early if you want a tall tree, or call to find out what we have available.</p>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+
+		<div id="care" class="section">
+			<div class="wrapper">
+				<div class="innerwrapper">
+					<h2>Caring for Your Tree</h2>
+
+					<div id="firsttip" class="tip">
+						<div class="circle" title="Proper Tree Care"></div>
+						<h4>What is the proper care?</h4>
+						<p>There are several key steps to ensure that your tree stays fresh and attractive. After purchasing the tree of your choice, we will bale it in loose netting. This open-weave sleeve will make it easier for you to get your tree home, and to protect it on the way. We also have twine, and our assistants will help you secure the tree onto or into your car.</p>
+						<div class="clear"></div>
+					</div>
+
+					<div id="secondtip" class="tip">
+						<div class="circle" title="Carrying Tree"></div>
+						<h4>What should you do when you bring your tree home?</h4>
+						<p>When you get home, you should immediately put the tree base into fresh water. If you don't do this within 4 hours, then cut an additional inch off the stump of your tree before placing the tree in fresh water. A fresh cut will help the tree absorb water and stay fresh, and is necessary if a tree's sap has sealed over the cut. You can put the tree inside immediately for decorating, or you can leave the tree in any cool, shady place sheltered from winds or heat. Either way, we recommend keeping the netting on your tree until it is in your stand in your home.</p>
+						<div class="clear"></div>
+					</div>
+
+					<div id="thirdtip" class="tip">
+						<div class="circle" title="Keep Tree Green"></div>
+						<h4>How should you keep your tree green?</h4>
+						<p>Fresh trees tend to be very thirsty, so be sure to water it daily. A tree in a warm room can absorb as much as four pints of water a day, which is lost by evapotranspiration through the needles. You should check your tree daily, and add water as needed to make sure that the base of the tree is always covered with water. Check your tree closely, because with some stands, there can be water in the stand even though the base of the tree is no longer submerged in water.</p>
+						<div class="clear"></div>
+					</div>		
+
+
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+
+		<div id="contact" class="section alt">
+			<h2>Contact &amp; Find Us</h2>
+			<div class="wrapper">
+				<div class="innerwrapper">
+					<div id="hours">
+						<h3>Hours</h3>
+
+						<h4>November 1 - 18, 2016</h4>
+						<p>We're open for tagging <span class="bold">by appointment</span> on the weekends. Call us at (908) 236-9550 to make an appointment to stop by during any of these weekends.</p>
+
+						<h4>November 19, 2016</h4>
+						<p>We're open for the season! We'll be open November 19, 20, 25, 26, 27, and December 3, 4, 10, 11, 17, 18, from 10 a.m. until 5 p.m. on each day. No appointment is necessary on any of these days, just stop on by!</p>
+					</div>
+
+					<div id="directions">
+				
+							<h3>Directions</h3>
+
+							<div id="tabs">
+
+								<div id="tab1" class="tab active-tab">
+									<span class="icon-west"></span>
+									<p>from<br>east</p>
+								</div>
+
+								<div id="tab2" class="tab">
+									<span class="icon-southeast"></span>
+									<p>from<br>north or west</p>
+								</div>
+
+								<div id="tab3" class="tab">
+									<span class="icon-north"></span>
+									<p>from<br>south</p>
+								</div>
+								
+							</div> <!-- end tabs -->
+							<div class="clear"></div>
+							<div id="tab-content1" class="tab-content">
+								<h4>From East</h4>
+								<p>Take Route 78 west to Lebanon exit 20A. Proceed to Route 22, and turn right at light onto Route 22 west. Go 1 mile, then turn left onto Round Valley Access Road via jughandle. Go 3.3 miles, turn left onto Bass Lane, and go to #4 Bass Lane on right.</p>
+							</div> <!-- end tab 1 -->
+
+							<div id="tab-content2" class="tab-content hide">
+								<h4>From North or West</h4>
+								<p>Take Route 31 South from Clinton, and turn left onto Molasses Hill Road. Go 2.1 miles to the end, and turn right onto the Round Valley Access Road, also County Rt. 629. Go 1 mile, and turn left onto Bass Lane and go to #4 Bass Lane on right.</p>
+							</div> <!-- end tab 2 -->
+
+							<div id="tab-content3" class="tab-content hide">
+								<h4>From South</h4>
+								<p>Take Route 31 North from Flemington, and turn right onto Payne Road. Take Payne Road for 1.7 miles to the end. Turn left onto Round Valley Access Road, also County Rt. 629. Proceed for 1.3 miles, then turn right onto Bass Lane. Go to #4 Bass Lane on the right.</p>
+							</div> <!-- end tab 3 -->
+
+				
+				
+						</div>
+
+
+
+
+				</div>
+			</div>
+			
+			
+						
+
+			<div class="clear"></div>
+		</div>
+
+		
+
+
+		
+		<div id="map"></div>
+		
+
+		<footer class="section">
+			<div class="wrapper">
+				<p class="questions">Have any questions?</p>
+				<a href="mailto:info@theevergreenfarm.com?" class="button">send us an email</a>
+				<a href="tel:9082369550" class="button">(908) 236-9550</a>
+
+				<h3>&copy; <?php echo date("Y") ?> the evergreen farm. all rights reserved</h3>
+				<h4>website produced by <a href="http://www.randalsonner.com" target="_blank">randal sonner</a></h4>
+			</div>
+		</footer>
+		
+	</div> <!-- end content -->
+
+</body>
+
+</html>
