@@ -1,3 +1,66 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?l5oant');
+  src:  url('../fonts/icomoon.eot?l5oant#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?l5oant') format('truetype'),
+    url('../fonts/icomoon.woff?l5oant') format('woff'),
+    url('../fonts/icomoon.svg?l5oant#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-treeheight:before {
+  content: "\e900";
+  font-size: 112px;
+  color: rgb(54,59,46);
+  float:left;
+  margin: 0px 20px 0px 32px;
+}
+.icon-southeast:before {
+  content: "\e906";
+  font-size: 35px;
+}
+.icon-marker:before {
+  content: "\e901";
+  margin-right: 3px;
+}
+.icon-north:before {
+  content: "\e902";
+  font-size: 35px;
+}
+.icon-phone:before {
+  content: "\e903";
+  margin-right: 3px;
+}
+.icon-west:before {
+  content: "\e905";
+  font-size: 35px;
+}
+.icon-leftarrow:before {
+  content: "\e904";
+}
+.icon-rightarrow:before {
+  content: "\e907";
+} 
+
+
+
+
+
 html,body {
 	margin: 0;
 	padding: 0;
@@ -67,7 +130,7 @@ html,body {
 
 #navbar {
   width: 100%;
-  background-color: rgba(255,255,255,0.9);
+  background-color: rgba(255,255,255,0.95);
   height: 97px;
   position: relative;
   -webkit-transition: .3s ease;
@@ -341,14 +404,11 @@ html,body {
 .section p {
   font-size: 15px;
   line-height: 22px;
-  width: 100%;
 }
 
 .alt {
   background-color: rgb(68,74,58);
   color: rgb(255,255,255);
-  border-top: 5px solid rgb(54,59,46);
-  border-bottom: 5px solid rgb(54,59,46);
 }
 
 #about {
@@ -446,7 +506,7 @@ html,body {
   margin: -30px 0 0 0;
   position: absolute;
   z-index: 998;
-  background-color: rgb(183,183,177);
+  background-color: rgb(54,59,46);
   color: rgb(255,255,255);
   text-decoration: none;
   border-top-right-radius: 3px;
@@ -461,7 +521,7 @@ html,body {
   margin: 0px;
   position: absolute;
   top: 6px;
-  left: 12px;
+  left: 13px;
 }
 
 .next {
@@ -472,7 +532,7 @@ html,body {
   margin: -30px 0 0 0;
   position: absolute;
   z-index: 998;
-  background-color: rgb(183,183,177);
+  background-color: rgb(54,59,46);
   color: rgb(255,255,255);
   text-decoration: none;
   border-top-left-radius: 3px;
@@ -547,7 +607,7 @@ html,body {
   max-width: 315px;
 }
 
-#trees, #care {
+#care {
   color: rgb(68,74,58);
   background-color: rgb(255,255,255);
 }
@@ -603,12 +663,17 @@ html,body {
   background-size: cover;
 }
 
+#treeblurb {
+  background-color: rgb(68,74,58);
+  border-top: 1px solid rgb(54,59,46);
+}
+
 #treeblurb p {
   max-width: 598px;
   margin: 0px;
   text-align: left;
-  font-weight: 300;
   float: left;
+  color: rgb(255,255,255);
 }
 span.bold {
   font-weight: 700;
@@ -658,6 +723,12 @@ span.bold {
   float: right;
 }
 
+#hours {
+  width: 46%;
+  margin-bottom: 25px;
+  float: left;
+}
+
 #tabs{
   margin-top: 20px;
 }
@@ -695,16 +766,6 @@ span.bold {
   font-size: 25px;
 }
 
-/*.tab p:last-child:after {
-  letter-spacing: normal;
-    content: "+";
-    font-size: 2.2em;
-    line-height: 0.8em;
-    -webkit-transition: -webkit-transform 0.3s ease-in-out, color 0.3s ease;
-    transition: transform 0.3s ease-in-out, color 0.3s ease;
-    display: inline-block;
-}*/
-
 .tab:first-child {
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
@@ -736,6 +797,7 @@ span.bold {
     width: 0;
     height: 0;
     position: absolute;
+    z-index: 100;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -749,6 +811,16 @@ span.bold {
     transform: rotate(-225deg);
 }
 
+ #directions h4, .tab-content p {
+  padding: 0px 20px;
+}
+
+.tab-content {
+  z-index: 50;
+  background-color: rgb(54,59,46);
+  margin-top: -18px;
+  padding-bottom: 20px;
+}
 
 
 #map {
@@ -762,7 +834,6 @@ footer {
   color: white;
   text-align: center;
   text-transform: uppercase;
-  border-top: 5px solid rgb(54,59,46);
 }
 
 footer p {
@@ -826,27 +897,26 @@ footer h4 a:hover {
 }
 
 
-@media (max-width: 890px) {
 
-  #hours p {
-    width: 90%;
-  }
-
-  #directions h3 {
-    text-align: center;
-  }
-
-  .direction {
-    float: none;
-    text-align: center;
+@media (max-width: 900px) {
+  #treeblurb p {
     width: 100%;
-    margin-bottom: 30px;
+    max-width: none;
+    text-align: center;
+    float: none;
   }
 
-  .direction:last-child {
-    margin-bottom: 0px;
+  .icon-treeheight:before {
+    float: none;
+    display: block;
+    text-align: center;
+    margin: 0px 0px 20px 0px;
   }
+
 }
+
+
+
 
 @media (max-width: 750px) {
   .slide_item .circle {
@@ -892,6 +962,31 @@ footer h4 a:hover {
   .tile:last-child {
     width: 100%;
   }
+
+  #hours {
+    width: 100%;
+    margin-bottom: 25px;
+    float: none;
+    text-align: center;
+  }
+
+  #hours p {
+    margin: 0px auto;
+    margin-bottom: 18px;
+  }
+
+  #directions {
+    width: 100%;
+    margin-bottom: 25px;
+    float: none;
+    text-align: center;
+  }
+
+  #directions h3 {
+    text-align: center;
+  }
+
+
 
 
 }
@@ -939,27 +1034,32 @@ footer h4 a:hover {
     line-height: 25px;
   }
 
+
+
+}
+
+@media (max-width: 500px) {
   .prev, .next {
     width: 40px;
     height: 40px;
     margin: -20px 0 0 0;
   }
 
+
   .prev p {
-    font-size: 32px;
+    font-size: 21px;
     line-height: 32px;
-    top: 4px;
-    left: 10px;
+    left: 9px;
   }
+
+
 
   .next p {
-    font-size: 32px;
-    line-height: 32px;
-    top: 4px;
     text-align: right;
-    right: 10px;
+    font-size: 21px;
+    line-height: 32px;
+    right: 9px;
   }
-
 }
 
 

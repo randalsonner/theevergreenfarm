@@ -24,7 +24,6 @@
 
 	<link rel="icon" href="images/favicon.png" />
 	<link rel="stylesheet" type="text/css" href="css/global.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
@@ -77,6 +76,22 @@
 		google.maps.event.addDomListener(window, 'resize', function() {
   		map.setCenter(center);
 		});
+
+		var contentString = '<div>'+
+        '<div>'+
+        '<p style="color:rgb(68,74,58);"><b>Click Here to Get Directions</b></p>'+
+        '</div>'+
+        '</div>';
+
+    var infowindow = new google.maps.InfoWindow({
+        content: contentString
+    });
+    google.maps.event.addListener(marker, 'click', function() {
+      infowindow.open(map,marker);
+    });
+
+    infowindow.open(map,marker);
+  
 
 
       }
@@ -174,7 +189,7 @@
 
 			</div>
 
-		<div id="trees" class="section">
+		<div id="trees" class="section alt">
 			<h2>Our Tree Selection</h2>
 						<a href='#' class="prev"><p><span class="icon-leftarrow"></span></p></a>
 						<a href='#' class="next"><p><span class="icon-rightarrow"></span></p></a>			
@@ -244,7 +259,7 @@
 			</div>
 
 
-		<div id="treeblurb" class="section alt">
+		<div id="treeblurb" class="section">
 			<div class="wrapper">
 				<div class="innerwrapper">
 					<span class="icon-treeheight"></span>
@@ -294,7 +309,7 @@
 						<h3>Hours</h3>
 
 						<h4>November 1 - 18, 2016</h4>
-						<p>We're open for tagging <span class="bold">by appointment</span> on the weekends. Call us at (908) 236-9550 to make an appointment to stop by during any of these weekends.</p>
+						<p>We're open for tagging <span class="bold">by appointment</span> on the weekends. Call us at (908) 236-9550 to make an appointment to stop by during any of these weekends. We're excited to seeing you!</p>
 
 						<h4>November 19, 2016</h4>
 						<p>We're open for the season! We'll be open November 19, 20, 25, 26, 27, and December 3, 4, 10, 11, 17, 18, from 10 a.m. until 5 p.m. on each day. No appointment is necessary on any of these days, just stop on by!</p>
